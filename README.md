@@ -95,4 +95,28 @@ The API will return a summary containing:
 
 ---
 
+## 🛠 Running Tests
+To ensure everything is working correctly, run the tests in two terminal windows:
+
+### 1️⃣ First Terminal (Run the Server)
+```bash
+python manage.py runserver
+```
+
+### 2️⃣ Second Terminal (Run the Tests)
+#### Ubuntu/Linux/macOS:
+```bash
+source venv/bin/activate
+python3 manage.py test
+```
+#### Windows:
+```bash
+venv\Scripts\activate
+python manage.py test
+```
+
+This will run the Django test suite and verify that the CSV validation logic is functioning as expected.
+
+---
+
 ### ✅ Setup Complete! 🎉
